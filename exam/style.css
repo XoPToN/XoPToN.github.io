@@ -29,7 +29,7 @@
 }
 
 #backgr {
-    background-image: url(img/backgroun-site1.jpg);
+    background-color: cadetblue;
 }
 
 #slider {
@@ -67,7 +67,8 @@ article img {
 
 #desktop:checked ~ #slider {
     /*размер всего слайдера*/
-    max-width: 400px;
+    max-width: 800px;
+    max-height: 450px;
     /*максимальнная длинна*/
 }
 
@@ -208,59 +209,13 @@ a {
     /* Левый нижний угол */
     padding: 10px;
     /* Поля вокруг текста */
-    background: #F20026;
+    background: #D7E5EC;
     /* Цвет фона */
-    color: #fff;
+    color: green;
     /* Цвет текста */
     width: 100%;
     /* Ширина слоя */
     text-align: center;
-}
-
-#feedback-form {
-    max-width: 400px;
-    padding: 2%;
-    border-radius: 3px;
-    background: #f1f1f1;
-}
-
-#feedback-form [required] {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 2px 0 2% 0;
-    padding: 2%;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-radius: 3px;
-    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .2) inset, 0 0 transparent;
-}
-
-#feedback-form [required]:hover {
-    border-color: #7eb4ea;
-    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .2) inset, 0 0 transparent;
-}
-
-#feedback-form [required]:focus {
-    outline: none;
-    border-color: #7eb4ea;
-    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .2) inset, 0 0 4px rgba(35, 146, 243, .5);
-    transition: .2s linear;
-}
-
-#feedback-form [type="submit"] {
-    padding: 2%;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2) inset;
-    background: #669acc;
-    color: #fff;
-}
-
-#feedback-form [type="submit"]:hover {
-    background: #5c90c2;
-}
-
-#feedback-form [type="submit"]:focus {
-    box-shadow: 0 1px 1px #fff, inset 0 1px 2px rgba(0, 0, 0, .8), inset 0 -1px 0 rgba(0, 0, 0, .05);
 }
 
 /*кнопки соцсетей*/
@@ -276,4 +231,123 @@ a {
 
 .widjet-social li a:hover {
     color: aqua;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lora);
+body {
+    margin: 0;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    transition: .5s linear;
+    word-spacing: 5px;
+}
+
+i {
+    margin-right: 20px;
+    margin-left: 20px;
+    word-spacing: normal;
+}
+
+nav {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto 30px;
+    padding: 20px;
+}
+
+.menu_header ul {
+    background: #D4E7EE;
+    overflow: hidden;
+    padding: 0;
+    padding: 10px;
+}
+
+.menu_header li {
+    float: left;
+}
+
+.menu_header a {
+    display: block;
+    padding: 1em;
+    border-right: 1px solid #ADC0CE;
+    background: rgba(173, 192, 206, .3);
+    color: #29838C;
+}
+
+.menu_header a:hover {
+    background: #ADC0CE
+}
+
+.menu_footer ul {
+    padding: 10px;
+}
+
+.menu_footer li {
+    display: inline-block;
+    margin: auto;
+    float: left;
+}
+
+.menu_footer a {
+    padding: 1em;
+    display: block;
+    color: #74924C;
+    border-right: 1px solid #ADC0CE;
+    background: rgba(186, 215, 139, .3);
+}
+
+.menu_footer a:hover {
+    background: #BAD78B
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu_header form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.menu_header input {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+
+}
+
+.menu_header button {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 50px;
+    border: none;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.menu_header button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
 }
