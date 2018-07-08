@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="feedback_style.css">
+</head>
+
+<body>
+   
+    <div class="parent">
+        <div class="block image-flex">
+            <form method="POST" id="feedback-form">
+                <p><strong>Форма обратной связи</strong></p>
+                Как Вас зовут? :
+                <input type="text" name="nameFF" required placeholder="имя" x-autocompletetype="name"> Email для связи:
+                <input type="email" name="contactFF" required placeholder="адрес электронной почты" x-autocompletetype="email"> Ваш телефон:
+                <input type="tel" name="telephoneFF" required placeholder="ваш телефон" x-autocompletetype="tel"> Дата и время звонка
+                <input type="datetime" name="datatimeFF" required placeholder="дата и время" x-autocompletetype="datatime">
+                <input type="submit" value="отправить">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
